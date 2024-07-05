@@ -1,0 +1,71 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main h1{
+    font-family: "Roboto";
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.calOuter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#calDisplay{
+    /* background-color: rgba(0, 0, 0, .4); */
+    /* color: white; */
+    outline: none;
+    border: none;
+    padding: 15px;
+    border: 1px solid black;
+    /* border-radius: 20px; */
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: all .4s;
+}
+
+.calInner button{
+    width: 50px;
+    padding: 15px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    outline: none;
+    font-family: "Roboto";
+    font-size: 16px;
+    cursor: pointer;
+}
+.calInner button:hover{
+    background-color: black;
+    color: white;
+    transition: .6s;
+}
+
+@media screen and (max-width: 520px) {
+    main h1{
+        font-size: 50px;
+    }
+}
